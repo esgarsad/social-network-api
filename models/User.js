@@ -11,16 +11,15 @@ const UserSchema = new Schema({
         type: String,
         unique: true,
         required: true,
-        // use regex to validate email
         match: /.+\@.+\..+/
     },
-    thoughts: [
+    thoughts: [//Array of _id values referencing the Thought model
         {
             type: Schema.Types.ObjectId,
             ref: 'Thought'
         }
     ],
-    friends: [
+    friends: [//Array of _id values referencing the User model
         {
             type: Schema.Types.ObjectId,
             ref: 'User'
@@ -35,10 +34,10 @@ const UserSchema = new Schema({
     }
 )
 
-// create the User model
+// User model
 const User = model('User', UserSchema);
 
-// get total count of friends
+// Total count of friends using virtuals
 UserSchema.virtual('friendCount').get(function () {
     return this.friends.length
 })

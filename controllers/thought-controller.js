@@ -36,15 +36,13 @@ const thoughtController = {
             })
     },
     addThought({ params, body }, res) {
-        console.log('this is the body');
         console.log(body);
         Thought.create(body)
-            .then(({ _id }) => {
-                console.log('this is the _id');
-                console.log(_id);
+            .then(({ username }) => {
+                console.log(username);
                 return User.findOneAndUpdate(
-                    { _id: body.userId },
-                    { $push: { thoughts: _id } },
+                    { username: body.username },
+                    { $push: { thoughts: username } },
                     { new: true, runValidators: true }
                 );
             })

@@ -8,12 +8,15 @@ Clone this repository, then run npm install from the terminal
 
 ## Use
 
-Run it from command line by typing "npm start". You can perform CRUD operations 
+Run it from command line by typing "npm start", that will start the server. You can perform CRUD operations from the two endpoints /api/users/ and /api/thoughts
 
 
-## Notes about Team profile generator
+## Notes about Social Network API
 
-When cloning the repository, you will also get the test files
+Database is handled with mongoose and Mongo DB.
 
-![teamprofilegen](https://github.com/esgarsad/team-profilegen/blob/develop/src/images/teamprofile.jpg)
+![socialnetworkapi](https://github.com/esgarsad/social-network-api/blob/main/utils/images/socialnetworkapi.jpg)
 
+## Contributions
+
+Thank you for your interest, but at the moment, I am not accepting contributions to the project

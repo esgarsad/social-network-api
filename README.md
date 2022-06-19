@@ -10,6 +10,9 @@ Clone this repository, then run npm install from the terminal
 
 Run it from command line by typing "npm start", that will start the server. You can perform CRUD operations from the two endpoints /api/users/ and /api/thoughts
 
+More details can be found in this video
+https://drive.google.com/file/d/19xrc83BIONc8loHGlwoEVu-mBj2ITFpA/view
+
 
 ## Notes about Social Network API
 
